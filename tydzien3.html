@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tydzień 3</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">Strona główna</a>
+                <a href="tydzien2.html">Tydzień 2</a>
+                <a href="tydzien3.html">Tydzień 3</a>
+                <a href="tydzien4.html">tydzień 4</a>
+            </nav>
+        </header>
+        <header>
+            <h1>Trzeci tydzień nauki</h1>
+        </header>
+        <article>
+            <header>
+                <h2>Tydzień 3 lekcja 2</h2>
+            </header>
+            <h3>KANBAN</h3>
+            <p>W tej metodzie należy przygotować 3 kolumny.<br/> W pierwszej wpisz wszystko co masz do zrobienia (kolumna ToDo). <br/> W drugiej wpisz to nad czym aktualnie pracujesz, powinna to być jedna rzecz (kolumna DOING)<br/> W trzeciej wpisz to co
+                zrobiłeś (kolumna DONE).<br/> Dzięki takiemu podziałowi widzisz postęp prac. Możesz użyć darmowej aplikacji online: Trello.com.
+            </p>
+        </article>
+
+        <article>
+            <h2>Tydzień 3 lekcja 3</h2>
+            <h3>HTML cz.2</h3>
+            <p><b>znacznik &ltbr&gt lub &ltbr/&gt</b> -Aby tekst “złamać” i pisać od nowej linii użyj &ltbr/&gt <br> Natomiast jeśli chcesz zrobić odstęp np 3 linii to nie rób tak &ltbr/&gt&ltbr/&gt&ltbr/&gt . Aby zrobić odstęp większy niż jedna linia użyjemy
+                stylów CSS, ale to w przyszłych lekcjacach.
+            </p>
+
+            <p>
+                <b> &ltb&gt vs &ltstrong&gt</b> oraz <b>&lti&gt vs &ltem&gt</b> <br/> Znacznik &ltb&gt oraz &lti&gt to zwykłe pogrubienie lub kursywa. Natomiast jeśli chcemy zaznaczyć, że w tekście jest coś ważnego użyjemy &ltb&gt, a jeśli chcemy zaznaczyć
+                ważny cytat albo wyrazić ironie użyjemy &ltem&gt. <br/> &ltb&gt oraz &ltem&gt mają znaczenie semantyczne dla wyszukiwarek.
+            </p>
+
+            <p>
+                <b> &lta&gt</b> - fundament budowy stron internetowych, tworzy linki, odnośniki zarówno do zewnętrznych dokumentów jak i wewnętrznych. <br/> Znacznik &lta&gt posiada dwa argumenty <b>href=””</b> oraz <b>target=””</b><br/>
+                <p style="text-align: center; color: yellow;">&lta href="" target=""&gt opis łącza &lt/a&gt</p>
+            </p>
+
+            <p>
+                <b> &ltheader&gt </b> Jeśli tworzę nagłówek dla wszystkich stron taki sam, to tworzę go za pomocą znacznika &ltheader&gt, który umieszczam przed &ltmain&gt. Dzięki temu wyszukiwarka google nie analizuje co w nim jest, bo on szuka tylko
+                zawartości w &ltmain&gt. Ten nagłówek wklejam na każdą stronę i podstronę, żeby mieć taką samą np. nawigacje.
+            </p>
+
+            <p>
+                &ltnav&gt służy do tworzenia nawigacji na stronie. Mogę ją umieścić w powyższym &ltheader&gt &lt/header&gt &ltheader&gt <br/> &ltnav&gt
+                <br/> &lta href="" target=""&gt opis łącza &lt/a&gt <br/> &lt/nav&gt <br/> &lt/header&gt Powyżej przykład jak podlinkować podstronę w nawigacji, która znajduje się w nagłówku i jest umieszczona na każdej podstronie przed znacznikiem &ltmain&gt
+            </p>
+            <p>
+                <b>&ltfooter&gt</b> stopkę ogólną dla naszych stron, również wynosze poza &ltmain&gt i przeklejam taką sama na każdą strone i podstrone (oczywiście każda strona i podstrona czy &ltsection&gt czy &ltarticle&gt może mieć własną &ltfooter&gt).
+            </p>
+
+            <p>
+                <b>  &ltimg src=”” alt=””/&gt </b> - PAMIĘTAJ o użyciu /&gt ponieważ znacznik img jest samozamykający się
+            </p>
+        </article>
+
+        <article>
+            <h2>Tydzień 3 lekcja 6</h2>
+            <h3>Jak działa internet</h3>
+
+            <p><b>HTTP(S)</b> - Hypertext Transfer Protocol (Secure) - protokół, którego używa przeglądaka do transportowania HTML-a. Pobiera i wyświetla pliki znajdujące się w stronach internetowych.</p>
+            <p><b>URL</b> - Uniform Resource Locator - adres strony. Ten adres składa się z kilku części:</p>
+            <p style="text-align: center; color: yellow">https:// cotenfrontend :443 / index.html ?parametry=wartość</p>
+            <ul>
+                <li><b>https://</b> - protokół</li>
+                <li><b>cotenfrontend.pl</b> - host (adres serwera)</li>
+                <li><b>:443</b> - port (ta część zazwyczaj jest dla użytkownika niewidoczna). Wskazuje przeglądarce, na którym porcie na serwerze znajdują się pliki strony</li>
+                <li><b>/</b> - bardzo ważny znak / - root - przy podawaniu ścieżki do zasobów (src). Jeśli podajemy źródło ze slashem na początku (src="/img.jpg"), przeglądarka szuka w katalogu głównym. Jeśli podajemy bez (src="img.jpg") - szuka w katalogu
+                    aktualnym, czyli np w katalogu podstrony. Dlatego lepiej podawać źródło (na serwerze) ze slashem na początku.</li>
+                <li><b>index.html </b>- ścieżka dostępu do zasobu</li>
+                <li><b>?paramert=wartość</b> - parametry</li>
+            </ul>
+            <p><b>DNS </b>- Domain Name System - system tłumaczący nazwę mnemoniczną (czyli "dla ludzi") na odpowiadający jej adres IP.</p>
+            <p><b>parsowanie </b>- sprawdzanie składni</p>
+            <p>Kody odpowiedzi protokołu HTTP:</p>
+            <ul>
+                <li> 10x - czekaj</li>
+                <li>200 - wszystko ok.</li>
+                <li>30x - Przekierowania: szukasz w złym miejscu - przekieruję cię w dobre, bo wiem, gdzie.</li>
+                <li>404 - nie mam tego, czego potrzebujesz :(</li>
+                <li>50x - błędy serwera</li>
+            </ul>
+            <p>Kody możemy sprawdzić w Devtools (F12) w zakładce Network.</p>
+            </p>
+        </article>
+
+        <article>
+            <h2>Tydzien 3 lekcja 7</h2>
+            <h3>JavaScript</h3>
+
+            <p>
+                Kod javascript moge umiescic bezposrednio w pliku HTML lub w pliku zewnętrznym. kod JS dodaje w znacznikach &ltscript&gt&lt/script&gt i dodaje go na samym dole pliku HTML za &ltfooter&gt a tuz przed &lt/body&gt <br><br> &ltscript&gt
+                <br> alert('siema');
+                <br> &lt/script&gt <br><br> wyskoczy okienko z napisaem 'siema' PRZED zaladowaniem sie strony.
+            </p>
+
+            <p>
+                Mozemy zapisac kod JS w pliku z rozszezeniem .js, np main.js. Wtedy w znacznikach na koncu strony wpisuje : <br><br>&ltscript src="main.js"&gt&lt/script&gt <br> czyli podaje link do pliku main.js jako argument znacznika script i nie uzyje
+                href= jak w stylach, tylko src= tak jak w obrazkach.
+            </p>
+            <p>
+                POLECENIE:<br> console.log('siema'); <br> to tekst 'siema' wyswietli sie w konsoli przeglądarki (F12) i zakladka "console". W konsoli jest info, w której linijce kodu zostal dany wynik wywolany i klikajac w to pokaze nam sie w konsoli
+                kod js z pliku main.js<br> kolejnosc wykonywania zadan w kodzie js jest taka jak kolejnosc kodu, poprostu czytany jest kod linijka po linijce
+            </p>
+            <p>ZMIENNE w js<br><br> const firstName='Maciek';<br> const age= 32;<br><br> console.log(name);
+
+                <br> console.log(age); - jesli wstawiam do console.log zmienne, to wstawiam bez apostrofów <br><br> APOSTROF -jest w lewym gornym rogu klawiatury tam gdzie tylda "~", pod ESC.<br> dzięki uzyciu apostrofu mogę:<br><br> const firstName =
+                "Rafal";
+                <br> const age = 32;<br><br> console.log(`Siema, nazywam sie ${firstName} i mam ${age} lata`);<br><br> uzywam apostrofów '..' oraz zmienne dokladam do tekstu ,wszystko w jednym apostrofie, ale smienne zamykam w zawiasy klamrowe po znaku
+                dolara (patrz kod wyzej)
+            </p>
+        </article>
+
+        <article>
+            <h2>Tydzien 3 lekcja 8</h2>
+            <h3>t e r m i n a l</h3>
+
+            <p>Aby VSC dobrze wspolpracowal z terminalem: otworzy VSC i wcisnij ctrl+p i wpisommand: Instal 'code' command in PATH"</p>
+            <p>POLECENIA NA MACA I NA LINUXA</p>
+            <ul>
+                <li>cd - wejscie do katalogu, jesli dobijesz klawiszem tab to dopelni nazwe katalogu</li>
+                <li>ls - lista katalogów</li>
+                <li>ls -l lista katalogow w formie listy</li>
+                <li>cd .. przenosi nas wyzej (wychodze z katalogu)</li>
+                <li>cd ../.. - przenosi mnie dwa katalogi wyzej</li>
+                <li>mkdir - tworzy katalog</li>
+                <li>pwd - pokaze pełną sciezke do katalogu w ktorym sie znajduje</li>
+                <li>code . -(code spacja kropka) - uruchamia nam VSC w tym katalogu w ktorym jestem wpisujac "code ."</li>
+            </ul>
+            <p>POLECENIA W WINDOWS</p>
+            <ul>
+                <li>cd x tab (x pierwsza litera szukanego folderu) wciskając tab'ulator windows podpowiada jakie są katalogi na litere 'x'</li>
+                <li>cd .. przenosi nas wyzej (wychodze z katalogu)</li>
+                <li>cd ../.. - przenosi mnie dwa katalogi wyzej</li>
+                <li>cd - (smao cd) wyswietla sciezke do katalogu, w którym się znajduje</li>
+                <li>cd nazwaX - wejscie do katalogu nazwaX</li>
+                <li>mkdir NazwaKatalogu - tworzy katalog o nazwie "NazwaKatalogu"</li>
+                <li>code . -(code spacja kropka) - uruchamia nam VSC w tym katalogu w ktorym jestem wpisujac "code ."</li>
+            </ul>
+        </article>
+    </main>
+    <scriptsrc="main.js">
+
+        </script>
+</body>
+
+</html>

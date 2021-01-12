@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.tableDraw {
+    border: 1px solid black;
+}
+
+h2 {
+    color: red;
+}
