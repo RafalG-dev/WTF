@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tydzien 4</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="tydzien2.html">Tydzień 2</a>
+            <a href="tydzien3.html">Tydzień 3</a>
+            <a href="tydzien4.html">Tydzień 4</a>
+            <a href="tydzien5.html">Tydzień 5</a>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Czwarty tydzień nauki</h1>
+        </header>
+        <article>
+            <h2>TYDZIEŃ 4 LEKCJA 2</h2>
+            <h3>GIT</h3>
+            <p><strong>Repozytorium</strong> - projekt, jego wszystkie pliki w różnych etapach.<br>
+                <strong>  Commit</strong> - obecny stan projektu i opis, co się zmieniło od ostatniej wersji, rodzaj "save-a".
+            </p>
+            <ol>
+                <li>
+                    Instalujemy GIT-a: <a href="https://git-scm.com">https://git-scm.com/ </a>
+                </li>
+                <li>wchodzimy do terminala windows/linux/mac -można użyć <strong>Git Bash</strong>, króry na windowsie zainstalowal sie z GIT’em, dzialają w nim polecenia z terminala windows jak i linux.</li>
+                <li>Wpisz polecenia:
+                    <ul>
+                        <li>
+                            git config --global user.name "Jan Nowak" [tworzy konto Jan Nowak]
+                        </li>
+                        <li>git config --global user.email jannowak@example.com [dodaje email]</li>
+                        <li>git config -- get user.name [pobiera dane wlasciciela konta]</li>
+                        <li>git config -- get user.email [pobiera email wlasciciela]</li>
+                        <li>git --version - pokazuje wersję zainstalowanego Gita</li>
+                    </ul>
+                </li>
+                <li>Wchodzisz do katalogu z projektem (cały czas w terminalu) i wprowadzasz polecenia:
+                    <ul>
+                        <li>git init - zakładanie pustego repozytorium - koniecznie w katalogu z plikami projektu</li>
+                        <li>git status - pokazuje aktualny stan repozytorium, nic nie zmienia. <span style="color:red">Na czerwono</span> wyswietli pliki, które nie sa jeszcze zapisane na repozytorium, lub których dane zmienily sie od ostatniego commita.
+                            <span style="color:green">Na zielono</span> wyswietli pliki zacommitowane lub te, których zawartosc nie zmienila sie od ostatniego commita.</li>
+                        <li>git add . - (git add ‘spacja’ KROPKA) dodaje WSZYSTKIE pliki z bieżącego katalogu i podkatalogów do zarejestrowania ("zacommitowania")</li>
+                        <li style="color:red">git commit -m "OPIS CO SIE ZMIENILO od ostatniego razu, koniecznie w j. ang." - dodawanie nowego lub kolejnego rejestru/commitu (w terminalu)</li>
+                        <li>git commit --amend -m "New description" - zmienia opis ostatniego commitu</li>
+                        <li>gitk - dodatek pokazujący historię naszego projektu i zmiany w formie graficznej</li>
+                        <li>clear - czyści terminal</li>
+                    </ul>
+                </li>
+                <li>W VisualStudioCode też mamy wbudowany GIT. Mozesz tez zainstalowac w VSC dodatek <b>GIT LENS</b>. Z pozycji VSC można rownież commitowac, ale na początek aby nabrać wprawy i wiedzy jak co dziala polecam korzystać z terminala.</li>
+            </ol>
+        </article>
+
+
+    </main>
+
+</body>
+
+</html>
