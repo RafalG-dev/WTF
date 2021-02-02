@@ -1,12 +1,20 @@
-body {
-    background-color: black;
-    color: white;
-}
-
-.tableDraw {
-    border: 1px solid black;
-}
-
-h2 {
-    color: red;
-}
+        body {
+        background-color: black;
+        color: white;
+    }
+    
+    .tableDraw {
+        border: 1px solid black;
+    }
+    
+    h2 {
+        color: red;
+    }
+    
+    .nav a {
+        color: yellow;
+    }
+    
+    .fontGIT {
+        font-size: large;
+        color: #00EF00;
