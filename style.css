@@ -1,20 +1,54 @@
-        body {
-        background-color: black;
-        color: white;
-    }
-    
-    .tableDraw {
-        border: 1px solid black;
-    }
-    
-    h2 {
-        color: red;
-    }
-    
-    .nav a {
-        color: yellow;
-    }
-    
-    .fontGIT {
-        font-size: large;
-        color: #00EF00;
+body {
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    color: red;
+}
+
+.nav a {
+    color: yellow;
+}
+
+.fontGIT {
+    font-size: large;
+    color: #00EF00;
+}
+
+.p_tydz4_lek_4 {
+    width: 200px;
+}
+
+.center {
+    margin: auto;
+}
+
+.tableDraw {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+}
+
+.box-model-margin {
+    background-color: mediumorchid;
+}
+
+.box-model-border {
+    background-color: maroon;
+}
+
+.box-model-padding {
+    background-color: grey
+}
+
+.box-model-content {
+    background-color: mediumblue;
+}
+
+.box-model-w-h {
+    width: 70%;
+}

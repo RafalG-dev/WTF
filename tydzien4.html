@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="background">
     <header>
         <nav class="nav">
             <a href="index.html">Strona główna</a>
@@ -63,8 +63,118 @@
         </article>
 
         <article>
-            <h2>TYDZIEŃ 4 LEKCJA 2</h2>
+            <h2>TYDZIEŃ 4 LEKCJA 3</h2>
             <h3>github</h3>
+            <p>Przypomnę podstawowy flow:<br>
+                <span class="fontGIT"> git add . | git commit -m”opis zmian” | git push</span>
+            </p>
+            <p><b>GIT</b> działa lokalnie i pozwala śledzić i zarządzać zmianami w projekcie. Aby GIT działał zdalnie potrzebuje serwera, np. GitHub.com<br>
+
+                <b>commit’ujemy</b> kiedy dodajemy jakąś zmianę w projekcie. Pamiętaj, że komentujesz lokalnie na swoim dysku. Aby udostępnić (wypchnąć) zmnianę na serwer github użyj polecenia: <strong><span class="fontGIT">git push</span></strong> w
+                konsoli.
+            </p>
+        </article>
+
+        <article>
+            <h2>TYDZIEŃ 4 LEKCJA 4</h2>
+            <H3>Życie w pudełku</H3>
+            <p><strong>Poruszane tematy: </strong></p>
+            <p class="center p_tydz4_lek_4">display:block / inline <br> overflow: hidden / visible / auto</p>
+            <p><strong>display:</strong>- może mieć różne wartości (teraz poznamy tylko 3 z nich)</p>
+            <ul>
+                <li><b>display:block;</b>- kontener zajmuje całą szerokość strony, domyślny dla wielu znaczników. Kontenery z właściwością display: block; układają się na stronie jeden pod drugim</li>
+                <li><b>display: inline;</b> - kontener zajmuje dokładnie tyle szerokości i wysokości ile znajdująca się w nim treść. Kontenery z właściwością display:inline; układają się na stronie obok siebie (w linii) aż zapełnią całą szerokość ekranu,
+                    następnie przechodzą do kolejnej linii. Dla display;inline; - nie można nadawać wartości width i height.</li>
+                <li><b>display: inline-block;</b> - wyświetla się jak inline, ale może otrzymać właściwości jak kontener z własnością block, np. width i height.</li>
+            </ul>
+            <p><strong>overflow</strong> - może mieć wartości:</p>
+            <ul>
+                <li><b>overflow: hidden; </b>- jeśli treść kontenera zawiera większy obszar niż rozmiar kontenera (w pionie lub w poziomie) to “nadmiarowej” treści nie będzie widać</li>
+                <li><b>overflow: visible;</b> - jeśli treść kontenera zawiera większy obszar niż rozmiar kontenera (w pionie lub w poziomie) to “nadmiarową” treść będzie widać, będzie ona wychodziła poza rozmiar kontenera i będzie nachodzić na elementy znajdujące
+                    się obok lub pod naszym kontenerem.
+                </li>
+                <li><b>overflow:auto;</b> - przy nadmiarze treści pojawia się scroll w pionie lub poziomie.</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>TYDZIEŃ 4 LEKCJA 5</h2>
+            <p class="center"><strong>JEDNOSTKI: </strong></p>
+            <ul>
+                <li>0 - może być podawane bez jednostki</li>
+                <li>px - piksele</li>
+                <li>% procenty (np width: 50%; jest to 50% szerokości rodzica)</li>
+                <li>vw - viewport width - (np width:40vw; - jest to szerokość 40% szerokości okna przeglądarki (nie rodzica)</li>
+                <li>vh - viewport height (np. height: 100vh; - element z tą własciwością ma wysokość równą 100% okna przeglądarki)</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>TYDZIEŃ 4 LEKCJA 6</h2>
+            <p class="center"><strong>BOX-MODEL: </strong></p>
+            <p>Poniższy rysunek zrobiony jest następująco: tabela z jednymrzędem i dwoma polami, po lewej wizualizacja BOX-MODEL zrobiona tabelami, natomiast po prawej BOX-MODEL zrobiony DIV-ami (nie wiem czy stematycznie poprawne, <b>ale zapytaj na SLACKu Maćka</b></p>
+
+            <table class="tableDraw table">
+                <tr>
+                    <th class="tableDraw">wykonane przy użyciu znacznika &lttable&gt</th>
+                    <th class="tableDraw">Wykonane przy użyciu znacznika &ltdiv&gt</th>
+                </tr>
+
+                <tr>
+                    <td class="tableDraw ">
+                        <!-- w tym rzędzie  w pierwszym <td> (po lewej) zrobie box model za pomocą <table>, a w drugim <td> robię box model za pomocą <div>ów -->
+                        <table class="tableDraw center box-model-w-h">
+                            <tr>
+                                <td class="box-model-margin ">margin
+                                    <table class="tableDraw center center box-model-w-h">
+                                        <td class="box-model-border">border
+                                            <table class="tableDraw center box-model-w-h">
+                                                <td class="box-model-padding">padding
+                                                    <table class="tableDraw center box-model-w-h">
+                                                        <td class="box-model-content">
+                                                            content
+                                                        </td>
+                                                    </table>
+                                                    padding
+                                                </td>
+                                            </table>
+                                            border
+                                        </td>
+                                    </table>
+                                    margin
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- wponiższym oknie tabeli zrobie box-model z użyciem div-ów -->
+                    <td class="tableDraw">
+                        <div class="tableDraw center box-model-w-h box-model-margin special-div-table">margin
+                            <div class="tableDraw center box-model-w-h box-model-border">border
+                                <div class="tableDraw center box-model-w-h box-model-padding">padding
+                                    <div class="tableDraw center box-model-w-h box-model-content">content
+
+                                    </div>padding
+                                </div>border
+                            </div>margin
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p>Elementy w systemie <strong>box-model</strong> na stronie są prostokątami, które “obrabiamy” aby uzyskać odpowiedni kształt.</p>
+            <p><b>Jeśli ustawiamy wielkość elementu, mamy dwie możliwości:</b></p>
+            <ul>
+                <li><b>box-sizing</b> (domyślna) - podany wymiar ustawia dla <b>content box</b></li>
+                <li><b>border-box</b> - ustawia narzucony wymiar width i height dla wszystkiego włącznie z border, tylko marginesu nie uwzględnia.</li>
+            </ul>
+
+            <p><b>Budowa każdego prostokąta:</b></p>
+            <ul>
+                <li><b>content</b> - to treść znajdująca się w naszym elemencie</li>
+                <li><b>padding </b>- to wewnętrzny margines. Domyślnie wynosi zero</li>
+                <li><b>border</b> - to obramowanie naszego elementu, domyślnie border wynosi zero.</li>
+                <li><b>margin</b> - ustawia margines od innych elementów, czyli odległość w jakiej obramowanie naszego elementu znajduje się od innego elementu. <br>
+                    <b>margin: auto;</b> - wyśrodkowuje elementy o właściwości display:block; <b>ele pod warunkiem</b>, że elementy mają zdefiniowaną wartość width. (Jeśli element nie ma zdefiniowanego width, to zajmuje całą szerokość rodzica.)</li>
+            </ul>
         </article>
 
 
